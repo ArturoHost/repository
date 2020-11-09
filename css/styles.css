@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Sección de Cuerpo de la pagina*/
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    min-height: 600px;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.div-main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sección del Menú */
+
+.div-menu{
+    position: fixed;
+    width: 140px;
+    height: 100%;
+    background-color: #0039a6;
+}
+
+.div-logo{
+    display: flex;
+    width: 140px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-menu{
+    width: 140px;
+    height: 140px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-menu:hover{
+    background-color: #1a1f71;
+}
+
+.button-menu:active{
+    background-color: #3457D5;
+}
+
+.button-menu p{
+    margin: 0px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 14pt;
+    font-weight: 200;
+    color: white;
+    
+}
+
+.button-menu img{
+    width: 35px;
+}
+
+/*Sección Inicio*/
+
+.div-ruta1{
+    width: 100%;
+    height: 100%;
+    margin-left: 140px;
+    background-image: url('../images/Cetis/PasilloAulas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.opacidad{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+
+.div-wcom{
+    width: 100%;
+    opacity: 1;
+	animation-name: wcomOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+
+@keyframes wcomOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.div-wcom img{
+    width: 200px;
+}
+
+.p-1{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 50pt;
+    font-weight: 700;
+    color: white;
+}
+
+.p-2{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    color: white;
+}
+
+
+
+/*Sección Mapa*/
+.div-ruta2{
+    width: 100%;
+    height: 100%;
+    margin-left: 140px;
+}
+
+.div-header{
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-header{
+    margin: 0px;
+    padding-left: 20px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 32pt;
+    font-weight: 700;
+    color: #0039a6;
+}
+
+.div-global-map{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 60px);
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.div-map{
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 25px -15px;
+
+    animation-name: divmapOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes divmapOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.div-redaccion{
+
+}
+
+.div-redaccion p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    color: #0039a6;
+}
+
+.div-area-map{
+    
+}
+
+
+/*Sección Lugares*/
+.div-ruta3{
+    width: 100%;
+    height: 100%;
+    margin-left: 140px;
+}
+
+.div-header{
+    height: 60px;
+    background-color: white;
+}
+
+.p-header{
+    margin: 0px;
+    padding-left: 20px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 32pt;
+    font-weight: 700;
+    color: #0039a6;
+}
+
+.div-area-lugares{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 60px);
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+
+    animation-name: divlugaresOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes divlugaresOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.div-contenedor{
+    width: 350px;
+    height: 270px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.div-img{
+    width: 350px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px -15px;
+
+}
+
+.div-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.div-texto{
+    display: flex;
+    width: 350px;
+    height: 270px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.div-contenedor:hover .div-texto{
+    opacity: 0;
+    transition: ease-out 400ms;
+    background-color: transparent;
+}
+
+h1{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 28pt;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* Sección Modal */
+
+  .modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    background-color: rgba(0,0,0,.8);
+    pointer-events:none;
+    transition: transform ease-in-out 1s;
+  }
+
+  .modal-contenido{
+    display: block;
+    width: 650px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+  }
+
+  .modal h3{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 24pt;
+    font-weight: 700;
+    color: #0039a6;
+  }
+
+  .modal a{
+      padding-right: 20px;
+      text-decoration: none;
+      font-family: 'Mukta Vaani', sans-serif;
+      font-size: 32pt;
+      font-weight: 500;
+      color: rgb(185, 185, 185);
+  }
+
+  .modal a:hover{
+      color: #3457D5;
+      transition: ease-in 300ms;
+  }
+
+  .modal-contenido img{
+      width: 600px;
+      box-shadow: 0px 0px 25px -15px;
+
+  }
+
+  .modal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
